@@ -17,6 +17,9 @@ echo "Curl checked."
 [ -x "$(command -v wget)" ] ||  sudo apt-get install wget;
 echo "Wget checked."
 
+[ -x "$(command -v yadm)" ] ||  sudo apt install yadm;
+echo "Yadm checked."
+
 test -f "$ZSH/oh-my-zsh.sh" || sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)";
 echo "Oh my zSH checked."
 
